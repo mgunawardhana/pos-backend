@@ -16,8 +16,8 @@ const app = express();
 // Enhanced CORS configuration for development
 app.use(cors({
   origin: [
-    'http://localhost:3002',
-    'http://31.97.70.39:3002',
+    'http://localhost:3001',
+    'http://31.97.70.39:3001',
     'http://31.97.70.39',
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -36,7 +36,7 @@ app.use('/api/received-stocks', receivedStockRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/sales', salesRoutes);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
