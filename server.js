@@ -19,6 +19,7 @@ app.use(cors({
     'http://localhost:3001',
     'http://31.97.70.39:3001',
     'http://31.97.70.39',
+    'https://pos-frontend-topaz-three.vercel.app'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
